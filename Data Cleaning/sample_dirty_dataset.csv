@@ -1,0 +1,7 @@
+Name,Age,Salary
+Alice,25.0,35000.0
+Bob,,-10000.0
+Charlie,35.0,48000.0
+David,40.0,
+Eva,,60000.0
+Frank,29.0,72000.0
