@@ -1,7 +1,6 @@
 # 🚀 Data Preprocessing Techniques
 
 [![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)](https://github.com/Man0dya/Data-Preprocessing-Techniques/pulls)
 
 Welcome to the ultimate guide for mastering **data preprocessing** in Python! 📊 This repository is your go-to resource for transforming raw data into clean, structured datasets ready for machine learning models. Whether you're a beginner or an expert, dive into practical examples using powerful libraries like [Pandas](https://pandas.pydata.org/) and [Scikit-learn](https://scikit-learn.org/).
@@ -81,5 +80,3 @@ We love contributions! 🌟 Whether it's fixing bugs, adding features, or improv
 5. Open a Pull Request
 
 ---
-
-*Made with ❤️ for data enthusiasts everywhere!*
