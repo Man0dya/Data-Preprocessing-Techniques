@@ -1,5 +1,4 @@
-
-# 🚀 Data Preprocessing Techniques
+# 🚀 Data Preprocessing Techniques 🚀
 
 [![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/)
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)](https://github.com/Man0dya/Data-Preprocessing-Techniques/pulls)
