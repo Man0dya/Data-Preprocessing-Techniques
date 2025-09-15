@@ -18,18 +18,18 @@ Welcome to the ultimate guide for mastering **data preprocessing** in Python! Th
 
 ```
 Data-Preprocessing-Techniques/
-├── 📄 Full Python Notebook Data Preprocessing Techniques.py  # 🎯 Complete demo of all techniques
-├── 📖 README.md
-├── 🧹 Data Cleaning/
+├── Full Python Notebook Data Preprocessing Techniques.py  # 🎯 Complete demo of all techniques
+├── README.md
+├── Data Cleaning/
 │   ├── Data_cleaning.py
 │   └── sample_dirty_dataset.csv
-├── 🔗 Data Integration/
+├── Data Integration/
 │   ├── Data_integration.py
 │   └── Dataset_for_data_integration.py
-├── 📉 Data Reduction/
+├── Data Reduction/
 │   ├── Data_reduction.py
 │   └── Dataset_for_data_reduction.py
-└── 🔄 Data Transformation & Discretization/
+└── Data Transformation & Discretization/
     ├── Data_Normalization.py
     └── sample_dataset.csv
 ```
@@ -53,7 +53,7 @@ pip install pandas numpy scikit-learn
 1. **Clone the repo**:
    ```bash
    git clone https://github.com/Man0dya/Data-Preprocessing-Techniques.git
-   cd Data-Preprocessing-Techniques
+   cd "Data-Preprocessing-Techniques"
    ```
 
 2. **Run the full demo**:
