@@ -126,3 +126,29 @@ cat_data = {
 df_cat = pd.DataFrame(cat_data)
 df_cat_encoded = pd.get_dummies(df_cat, columns=["Color"])
 print("\nOne-Hot Encoding Example:\n", df_cat_encoded)
+
+# Example: Label Encoding
+from sklearn.preprocessing import LabelEncoder
+le = LabelEncoder()
+df_cat['Color_Label'] = le.fit_transform(df_cat['Color'])
+print("\nLabel Encoding Example:\n", df_cat)
+
+# Example: Feature Selection (Variance Threshold)
+from sklearn.feature_selection import VarianceThreshold
+fs_data = pd.DataFrame({
+    "A": [1, 1, 1, 1, 1],
+    "B": [0, 1, 0, 1, 0],
+    "C": [5, 6, 7, 8, 9]
+})
+selector = VarianceThreshold(threshold=0.0)
+fs_selected = selector.fit_transform(fs_data)
+print("\nFeature Selection (Variance Threshold) Example:\nOriginal Data:\n", fs_data)
+print("Selected Features:\n", pd.DataFrame(fs_selected, columns=['B', 'C']))
+
+# Example: Data Aggregation (GroupBy)
+agg_data = pd.DataFrame({
+    "Department": ["HR", "IT", "HR", "IT", "Finance"],
+    "Salary": [40000, 60000, 42000, 65000, 70000]
+})
+agg_result = agg_data.groupby("Department")["Salary"].mean().reset_index()
+print("\nData Aggregation (GroupBy) Example:\n", agg_result)
