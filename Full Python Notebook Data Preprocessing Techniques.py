@@ -102,3 +102,27 @@ print("\nOrders:\n", orders)
 # Merge (Integration)
 integrated = pd.merge(customers, orders, on="CustomerID", how="inner")
 print("\nIntegrated Dataset:\n", integrated)
+
+# ==================================
+# 5. OTHER DATA PREPROCESSING TECHNIQUES
+# ==================================
+print("\n--- OTHER DATA PREPROCESSING TECHNIQUES ---")
+
+# Example: Binning (Discretization)
+other_data = {
+    "Age": [25, 32, 47, 51, 62, 29, 41, 55, 60, 38]
+}
+df_other = pd.DataFrame(other_data)
+# Create age bins
+bins = [20, 30, 40, 50, 60, 70]
+labels = ['20-29', '30-39', '40-49', '50-59', '60-69']
+df_other['AgeGroup'] = pd.cut(df_other['Age'], bins=bins, labels=labels, right=False)
+print("Binning (Discretization) Example:\n", df_other)
+
+# Example: Encoding categorical variables
+cat_data = {
+    "Color": ["Red", "Blue", "Green", "Blue", "Red"]
+}
+df_cat = pd.DataFrame(cat_data)
+df_cat_encoded = pd.get_dummies(df_cat, columns=["Color"])
+print("\nOne-Hot Encoding Example:\n", df_cat_encoded)
