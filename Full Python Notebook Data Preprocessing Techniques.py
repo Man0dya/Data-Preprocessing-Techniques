@@ -152,3 +152,5 @@ agg_data = pd.DataFrame({
 })
 agg_result = agg_data.groupby("Department")["Salary"].mean().reset_index()
 print("\nData Aggregation (GroupBy) Example:\n", agg_result)
+
+# Example: Outlier Detection (Z-Score Method)
